@@ -24,3 +24,8 @@ Reports shoddy code
 
 python -m pip install black
 
+
+for i in inflammation/*py
+do
+  black $i
+done
