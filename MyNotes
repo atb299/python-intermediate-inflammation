@@ -1,0 +1,14 @@
+python -m venv venv
+source venv/bin/activate
+python --version
+python -m pip install numpy
+python -m pip install matplotlib
+pip list
+python -m pip install --upgrade pip
+pip list
+python -m pip install numpy==1.26.4
+pip list
+python -m pip freeze > requirements.txt
+cat requirements.txt
+python -m pip install -r requirements.txt
+
