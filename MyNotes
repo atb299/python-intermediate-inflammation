@@ -20,3 +20,7 @@ python -m pip install -r requirements.txt
 pylint inflammation
 
 Reports shoddy code 
+
+
+python -m pip install black
+
