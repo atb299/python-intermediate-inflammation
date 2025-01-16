@@ -18,6 +18,7 @@ def test_daily_mean(test: list[list[int]], expected: list[int]):
     """Test mean function works for array of zeroes and positive integers."""
     npt.assert_array_equal(daily_mean(np.array(test)), np.array(expected))
 
+
 @pytest.mark.parametrize(
     "test, expected",
     [
@@ -29,6 +30,7 @@ def test_patient_normalise(test: list[int], expected: list):
 
     result = patient_normalise(np.array(test))
     npt.assert_allclose(result, np.array(expected), rtol=1e-2, atol=1e-2)
+
 
 def test_daily_mean_zeros():
     """Test that mean function works for an array of zeros."""
