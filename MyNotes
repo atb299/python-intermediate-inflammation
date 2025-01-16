@@ -42,3 +42,5 @@ python -m pytest --cov=inflammation.models tests/test_models.py
 
 Report where code is not covered by tests:
 python -m pytest --cov=inflammation.models --cov-report term-missing tests/test_models.py
+
+python -m pytest --cov=inflammation.models tests/test_models.py
