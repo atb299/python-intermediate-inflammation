@@ -19,7 +19,7 @@ def load_csv(filename):
 
 def patient_normalise(data):
     """Normalise patient data from a 2D inflammation data array."""
-    patient_max = np.max(data, axis=0)
+    patient_max = np.max(data, axis=1)
     return data / patient_max[:, np.newaxis]
 
 def daily_mean(data):
