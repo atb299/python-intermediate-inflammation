@@ -29,3 +29,8 @@ for i in inflammation/*py
 do
   black $i
 done
+
+
+git switch -C test-suite
+
+python -m pip install pytest-cov
