@@ -17,6 +17,10 @@ def load_csv(filename):
     """
     return np.loadtxt(fname=filename, delimiter=",")
 
+def patient_normalise(data):
+    """Normalise patient data from a 2D inflammation data array."""
+    patient_max = np.max(data, axis=0)
+    return data / patient_max[:, np.newaxis]
 
 def daily_mean(data):
     """Calculate the daily mean of a 2d inflammation data array."""
