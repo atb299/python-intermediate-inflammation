@@ -34,3 +34,11 @@ done
 git switch -C test-suite
 
 python -m pip install pytest-cov
+
+
+Test code using the tests:
+python -m pytest --cov=inflammation.models tests/test_models.py
+
+
+Report where code is not covered by tests:
+python -m pytest --cov=inflammation.models --cov-report term-missing tests/test_models.py
